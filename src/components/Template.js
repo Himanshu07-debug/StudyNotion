@@ -4,8 +4,6 @@ import LoginForm from "./LoginForm";
 import SignUpForm from "./SignUpForm";
 import {FcGoogle} from "react-icons/fc"
 
-// Purpose of making this Template compnent is that Our SignUp and Login have many common things, only the form part is different
-// So we can reuse this component in both pages -> Login and SignUp
 
 const Template = ({title,desc1,desc2,image,formType,setIsLoggedIn}) => {
     return (
@@ -43,11 +41,6 @@ const Template = ({title,desc1,desc2,image,formType,setIsLoggedIn}) => {
                 className="absolute -top-4 right-4"
                 />
 
-                {/* Lazy loading is a technique for waiting to load certain parts of a webpage — especially images — until they are needed. 
-                Instead of loading everything all at once, known as "eager" loading, the browser does not request certain resources until the 
-                user interacts in such a way that the resources are needed. 
-                Home page me koi need nhi image ke load hone ki, jab respective route me jayenge, tab need padegi and tab LOAD honga
-                */}
 
             </div>
 

@@ -20,7 +20,6 @@ function App() {
   return (
 
     <div className="w-screen h-screen overflow-x-hidden overflow-y-auto flex flex-col bg-[#010B13]">
-      {/* richblack-900 color, taiwlind support nhi kar rha tha, to net se nikal liye hex code */}
 
         <Navbar isLoggedIn = {isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
 
@@ -31,7 +30,6 @@ function App() {
             <Route path="/signup" element={<SignUp setIsLoggedIn={setIsLoggedIn} />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={< Contact />} />
-            {/* Hume dashboard page ka access sirf login user ko hi allow ho, isko handle krna padega */}
             <Route path="/dashboard" element={
             <PrivateRoute isLoggedIn={isLoggedIn}>
               <Dashboard />

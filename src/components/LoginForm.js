@@ -18,7 +18,6 @@ const LoginForm = ({setIsLoggedIn}) => {
             ...prevData,
             [event.target.name]:event.target.value
         }) )
-        // if () is used, no need to write return keyword
     }
 
     function submitHandler(event){

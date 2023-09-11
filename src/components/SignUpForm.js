@@ -41,9 +41,8 @@ const SignUpForm = ({setIsLoggedIn}) => {
         console.log("Printing the formData");
         console.log(formData);
 
-        const accountData = {...formData}  // Cloning of Formdata object
+        const accountData = {...formData}  
 
-        // Adding accountType to the Object
         const finalData = {
             ...accountData,
             accountType
@@ -58,7 +57,6 @@ const SignUpForm = ({setIsLoggedIn}) => {
     return (
         <div className="flex flex-col w-full gap-y-4 mt-6">
 
-            {/* Student - Instruction tab */}
             <div className="flex bg-[#2F363C] rounded-full gap-x-1 p-1 max-w-max">
                 <button onClick={() => setAccountType("student")}
                 className={`${accountType === "student" ?
@@ -178,7 +176,6 @@ const SignUpForm = ({setIsLoggedIn}) => {
                 <button className="bg-yellow-400 rounded-[8px] font-medium text-[#010B13] px-[12px] py-[8px] w-full mt-10">
                     Create Account
                 </button>
-                {/* Any button in Form is by default submit */}
 
 
             </form>
